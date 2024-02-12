@@ -1,0 +1,123 @@
+@font-face {
+    font-family: myFont;
+    src: url(Monday\ Donuts.otf);
+  }
+
+body {
+    background-color:#fdc1c1;
+    text-align: center;
+    color:#fff;
+    font-family: myFont;
+  }
+  
+  * { color:#fff; text-decoration: none;}
+
+button {
+    cursor: pointer;
+    background-color: #df6b6b;
+    font-family: myFont;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 8%;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #a04b4b;
+}
+
+.heart{
+    position: absolute;
+    width: 120px;
+    z-index:99999;
+    height: 100px;
+    margin-left:-50px;
+    left:50%;
+     animation: heart 1s infinite;
+    transform:scale(.8);
+    transition:.6s;
+    margin-top:60px;
+    
+}
+.heart:before,
+.heart:after{
+    content: "";
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    border-radius: 50px 50px 6px 6px;
+    background: crimson;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after{
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(.8) translate(0,0);
+    }
+    
+    50% {
+        transform: scale(.92) translate(0, 12px);
+    }
+    
+    100% {
+        transform:scale(.8);
+    }
+}
+
+  #envelope {
+  background: white; 
+  margin: 200px auto;
+  height: 200px;
+  position: relative;
+  width: 320px;
+  border-radius:8px;
+  overflow:hidden;
+  animation: floaty 1s infinite;
+  margin-bottom: 5%;
+}
+
+@keyframes floaty {
+    0% {
+        transform:translate(0,0);
+    }
+    
+    50% {
+        transform:translate(0, 12px);
+    }
+}
+
+/* bottom, left, and right sides */
+.sides {
+  border-color: transparent #fbfbfb #f7f7f7 #fcfcfc;
+  border-style: solid;
+  border-width: 90px 170px;
+  bottom: 0;
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+
+/* top side */
+
+.top {
+  border-color: white transparent transparent;
+  border-style: solid;
+  border-width: 108px 140px 90px 140px;
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 0;
+  width: 0;
+}
