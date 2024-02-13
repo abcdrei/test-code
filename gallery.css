@@ -8,6 +8,14 @@ body {
     src: url(Monday\ Donuts.otf);
   }
 
+audio::-webkit-media-controls-volume-slider {
+    display: none !important;
+}
+
+audio::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+
 body {
     margin: 0;
 	padding: 1rem;
@@ -35,13 +43,13 @@ h1 {
 ul {
 	list-style: none;
     margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	padding: 10px;
 	display: grid;
 	gap: 1.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 4fr));
 	max-width: 100%;
-	width: 60rem;
+	width: 65rem;
 }
 
 figure {
@@ -75,7 +83,7 @@ figcaption {
 	justify-content: center;
 	place-items: center;
 	text-align: center;
-	padding: 1rem;
+	/* padding: 1rem; */
 	color: white;
 	font-size: 30px;
 	font-family: myFont;
