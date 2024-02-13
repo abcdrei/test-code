@@ -83,7 +83,7 @@ button:hover {
   border-radius:8px;
   overflow:hidden;
   animation: floaty 1s infinite;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
 @keyframes floaty {
